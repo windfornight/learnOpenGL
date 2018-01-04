@@ -623,7 +623,7 @@ LUALIB_API int (luaL_loadstring) (lua_State *L, const char *s) {
 
 /* }====================================================== */
 
-
+//申请一个空间，里面包含一个l_state, 和一个g_state
 static void *l_alloc (void *ud, void *ptr, size_t osize, size_t nsize) {
   (void)ud;
   (void)osize;
